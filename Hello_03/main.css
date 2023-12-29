@@ -62,7 +62,7 @@ main aside{
 }
 main aside ul{
     list-style-type: none;
-    /* width: 100%; */
+    width: 80%;
     margin: 0px 16px;
 }
 
@@ -84,7 +84,7 @@ main section{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    
     /* position: relative; */
 }
 
