@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border: 1px solid blue;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div_1"></div>
+    <div class="div_2"></div>
+    <div class="div_3"></div>
+    <div class="div_4"></div>
+    <div class="div_5"></div>
+  </body>
+  <script>
+    const div1 = document.querySelector("div.div_1");
+    div1.addEventListener("click", () => {
+      div1.style.backgroundColor = "red";
+    });
+    const div2 = document.querySelector("div.div_2");
+    div2.addEventListener("click", () => {
+      div2.innerText = "안녕하세요";
+    });
+    const div3 = document.querySelector("div.div_3");
+    div3.addEventListener("click", () => {
+      //값(문자ㅇㄹ)에 Html 태그가 포함되면 태그효과를 반영하여 표시한다.
+      div3.innerHTML = "<h1>안녕하세요</h1>";
+    });
+  </script>
+</html>
