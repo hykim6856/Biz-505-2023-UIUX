@@ -1,10 +1,10 @@
 const IMG_TAG_NAME = "IMG";
 const ALT_TEXT = {
-  인증사진: "몽이인증",
+  인증사진: "인증사진",
   바라보기: "바라보기",
   스피츠: "스피츠 종",
   눈치보기: "눈치보기",
-  인증사진: "놀아주기",
+  놀아주기: "놀아주기",
   첫만남: "첫만남",
 };
 const img_container = document.querySelector("section.img_container");

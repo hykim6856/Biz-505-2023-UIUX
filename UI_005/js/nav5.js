@@ -21,11 +21,11 @@ main_nav.addEventListener("click", (event) => {
     // } else {
     //   alert("네비 요소가 아닌 곳 클릭 : " + tag_name);
     if (nav_text === "HOME") {
-      importHTML(img_container, "./index.html");
+      document.location.href = "./index.html";
     } else if (nav_text === "로그인") {
-      importHTML(img_container, "./index.html");
+      importHTML(img_container, "./login.html");
     } else if (nav_text === "회원가입") {
-      importHTML(img_container, "./index.html");
+      importHTML(img_container, "./join.html");
     }
   }
 });
