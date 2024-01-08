@@ -46,7 +46,7 @@ let value3 = "";
 
 if (value1 !== "") {
   console.log(value1);
-} else if (value !== "") {
+} else if (value2 !== "") {
   console.log(value2);
 } else {
   console.log(value3);
@@ -54,4 +54,12 @@ if (value1 !== "") {
 console.log(value1 || value2 || value3);
 //falsy  가 아닌 겂을 value4에 저장하라
 let value4 = value1 || value2 || value3;
+let value4 = "";
+if (value !== "") {
+  value4 = value1;
+} else if (value2 !== "") {
+  console.log(value2);
+} else {
+  console.log(value3);
+}
 ```

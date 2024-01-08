@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        height: 100vh;
+      }
+      body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background-color: blueviolet;
+        padding: 15px 0;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px darkblue;
+      }
+      nav {
+        background-color: black;
+        color: yellow;
+        padding: 5px 0;
+        white-space: nowrap;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul :nth-of-type(4) {
+        margin-left: auto;
+      }
+      nav ul :nth-of-type(5) {
+        margin-left: auto;
+      }
+      nav ul li {
+        padding: 10px 20px;
+        border-radius: 30%;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      nav ul li:hover {
+        background-color: darkblue;
+      }
+
+      h3 {
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      article {
+        height: 100%;
+        border: 1px solid blue;
+      }
+      section {
+        white-space: nowrap;
+        border: 1px solid red;
+        margin: 20%;
+        margin-top: 0;
+        text-align: center;
+      }
+
+      section div {
+        display: flex;
+        margin: 30px 0;
+        color: blue;
+      }
+
+      section div label {
+        width: 40%;
+        text-align: right;
+        padding: 5px;
+      }
+
+      section div input {
+        border: 1px solid #bbb;
+        width: 30%;
+        border-radius: 10px;
+        padding: 8px 0;
+      }
+
+      section button {
+        border: none;
+        margin-bottom: 15px;
+        background-color: blue;
+        padding: 10px;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      section button:hover {
+        background-color: blueviolet;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #ccc;
+        padding: 15px;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>나의 홈페이지</h1>
+      <p>내가 처음으로 만드는 홈페이지 2024</p>
+    </header>
+    <nav>
+      <ul>
+        <li>홈</li>
+        <li>공지사항</li>
+        <li>자유게시판</li>
+        <li>로그인</li>
+        <li>회원가입</li>
+      </ul>
+    </nav>
+    <article>
+      <h3>로그인</h3>
+      <section>
+        <div>
+          <label for="ID">ID</label>
+          <input type="ID" />
+        </div>
+        <div>
+          <label for="PASSWORD">PASSWORD</label>
+          <input type="password" />
+        </div>
+        <button>로그인</button>
+      </section>
+    </article>
+
+    <footer><address>CopyRight&copy;hykim6856@naver.com</address></footer>
+  </body>
+</html>
