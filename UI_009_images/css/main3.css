@@ -23,6 +23,7 @@ header {
 section.main{
     flex: 1;
     border:  1px solid blue;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,34 +42,41 @@ article.image_container{
 div.image_view{
     width: 400px;
     height: 400px;
+    display: flex;
 }
 
 div.image_view img{
     width: 100%;
     height: 100%;
     transition: 1s;
+    opacity: 1;
+}
+
+div.image_view img.opacity0 {
+    opacity: 0;
 }
 
 div.image_list{
-    display: flex;
     height: 100px;
+    display: flex;
     margin: 0 auto;
 }
 
-div.image_item{
+div.image_list img {
     width: 100px;
     height: 100px;
-}
-div.image_item img{
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
+    transition: 0.7;
 }
 
-div.image_item:hover img{
+div.image_list:hover{
+    animation-play-state: paused;
+}
+
+div.image_list img:hover {
     opacity: 0.6;
     cursor: pointer;
 }
+
 
 footer{
     padding: 0.7rem;
