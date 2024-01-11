@@ -1,15 +1,28 @@
 form.blog_write {
-  width: 80%;
+  width: 60%;
   margin: 10px auto;
 }
 
+form.blog_write fieldset {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* 폼을 감싸는 박스의 제목설정 */
+form.blog_write legend {
+  padding: 10px;
+  color: blue;
+}
+
 form.blog_write div {
-  width: 60%;
-  margin: 1px auto;
+  width: 80%;
+  margin: 3px auto;
   display: flex;
 }
 
-form.blog_write label,
+/* form.blog_write div.btn_box, */
 form.blog_write input,
 form.blog_write textarea {
   margin: 3px;
@@ -21,6 +34,8 @@ form.blog_write label {
   text-align: right;
   color: blue;
   font-weight: bold;
+  box-shadow: 1px 1px 1px rgba(150, 150, 150, 0.7);
+  background-color: #eee;
 }
 form.blog_write input,
 form.blog_write textarea {
@@ -38,4 +53,35 @@ form.blog_write input:focus,
 form.blog_write textarea:focus {
   /* 아웃라인이 논으로 설정되어있어야함. */
   border: 2px solid green;
+}
+
+form.blog_write label:nth-of-type(4) label {
+  background-color: white;
+  box-shadow: none;
+}
+
+div.btn_box label {
+  box-shadow: none;
+  background-color: white;
+}
+
+div.btn_box div {
+  flex: 2;
+  margin: 5px;
+  padding: 8px 0;
+  /* border: 1px solid blue; */
+}
+
+div.btn_box button {
+  width: 100px;
+  padding: 10px 18px;
+  outline: none;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+
+div.btn_box button:hover {
+  box-shadow: 1px 1px 1px 1px inset rgba(0, 0, 0, 1);
 }
