@@ -1,0 +1,68 @@
+h1 {
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+div.all {
+  display: flex;
+}
+
+div.left {
+  border-right: 1px solid black;
+  width: 50%;
+}
+
+div.times {
+  display: flex;
+  margin: 5px 10px;
+}
+
+div.times input {
+  margin: 0 5px;
+  width: 100%;
+  padding: 5px;
+}
+
+div.lists li {
+  /* border: 1px solid black; */
+  margin: 5px 10px;
+  padding: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 4px 4px 1px #ccc;
+}
+div.lists li:hover {
+  background-color: #eee;
+}
+
+div.input {
+  width: 50%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 5px;
+}
+
+div.input input {
+  margin: 3px;
+  padding: 5px;
+}
+
+button {
+  margin: 3px;
+  padding: 5px;
+}
+
+footer {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(33, 33, 71);
+}
+
+article {
+  width: 60%;
+}
